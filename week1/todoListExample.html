@@ -1,0 +1,29 @@
+<template>
+	<div id="app">
+		<input/>
+		<ul>
+			<li v-for="item in items">
+				{{item.lable}}
+			</li>
+		</ul>
+	</div>
+</template>
+
+<script>
+	export default {
+		data () {
+			return {
+				items:[
+					{
+						label: 'reed books',
+						isFinished: false
+					},
+					{
+						label: 'eat dinner',
+						isFinished: true
+					}
+				]
+			}
+		}
+	}
+</script>
